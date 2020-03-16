@@ -1,5 +1,6 @@
 <template>
   <div>
+    <div>信雄的站点</div>
     <el-button @click="loginPage">Login</el-button>
     <el-button @click="signUpPage">Login</el-button>
   </div>
