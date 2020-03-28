@@ -3,16 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "be": "nodemon backend/servers",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "axios": "^0.19.2",
+    "bcrypt": "^4.0.1",
     "core-js": "^3.6.4",
     "element-ui": "^2.13.0",
     "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^8.0.8",
     "koa-static": "^5.0.0",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.5",
     "vue": "^2.6.11",
     "vue-router": "^3.1.5",
     "vuex": "^3.1.2"

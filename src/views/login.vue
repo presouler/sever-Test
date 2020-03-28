@@ -9,13 +9,16 @@
         <el-input v-model="user.pwd"></el-input>
       </el-form-item>
       <el-form-item>
-        <el-button type="primary">提交</el-button>
+        <el-button @click="btnSub" type="primary">提交</el-button>
       </el-form-item>
     </el-form>
   </div>
 </template>
 
 <script>
+import services from '../../frontServices/services';
+
+
 export default {
   data() {
     return {
@@ -24,6 +27,11 @@ export default {
         pwd: '',
       },
     };
+  },
+  methods: {
+    btnSub() {
+      services.login(this.user).then();
+    },
   },
 };
 </script>

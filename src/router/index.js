@@ -20,6 +20,11 @@ const routes = [
     name: 'Register',
     component: () => import('../views/register.vue'),
   },
+  {
+    path: '/secret',
+    name: 'Secret',
+    component: () => import('../views/secret.vue'),
+  },
 ];
 
 const router = new VueRouter({
